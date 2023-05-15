@@ -1,0 +1,48 @@
+author: mongoose-os
+description: A JS-enabled demo Mongoose OS firmware
+# arch: PLATFORM
+version: 1.0
+manifest_version: 2017-05-18
+libs_version: 2.17.0
+modules_version: 2.17.0
+mongoose_os_version: 2.17.0
+
+config_schema:
+  - ["mqtt.server", "iot.eclipse.org:1883"]
+  - ["i2c.enable", false]
+  - ["wifi.sta.enable", false]
+  - ["wifi.ap.enable", false]
+
+tags:
+  - js
+
+filesystem:
+  - fs
+
+libs:
+  - origin: https://github.com/mongoose-os-libs/boards
+  - origin: https://github.com/mongoose-os-libs/mjs
+  - origin: https://github.com/mongoose-os-libs/ca-bundle
+  - origin: https://github.com/mongoose-os-libs/core
+  - origin: https://github.com/mongoose-os-libs/http-server
+  - origin: https://github.com/mongoose-os-libs/fstab
+  - origin: https://github.com/mongoose-os-libs/provision
+  - origin: https://github.com/mongoose-os-libs/rpc-service-config
+  - origin: https://github.com/mongoose-os-libs/rpc-service-fs
+  - origin: https://github.com/mongoose-os-libs/rpc-service-gpio
+  - origin: https://github.com/mongoose-os-libs/rpc-uart
+  - origin: https://github.com/mongoose-os-libs/rpc-ws
+  - origin: https://github.com/mongoose-os-libs/adc
+  - origin: https://github.com/mongoose-os-libs/i2c
+  - origin: https://github.com/mongoose-os-libs/rpc-loopback
+  - origin: https://github.com/mongoose-os-libs/wifi
+  - origin: https://github.com/mongoose-os-libs/mqtt
+  - origin: https://github.com/mongoose-os-libs/dht
+  - origin: https://github.com/mongoose-os-libs/arduino-adafruit-ssd1306
+  - origin: https://github.com/mongoose-os-libs/arduino-ds3231
+  - origin: https://github.com/mongoose-os-libs/sntp
+  - origin: https://github.com/mongoose-os-libs/pwm
+  - origin: https://github.com/mongoose-os-libs/adc
+  - origin: https://github.com/mongoose-os-libs/spi
+  - origin: https://github.com/mongoose-os-libs/vfs-dev-spi-flash
+  - origin: https://github.com/mongoose-os-libs/wifi
