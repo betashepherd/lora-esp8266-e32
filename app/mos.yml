@@ -8,10 +8,8 @@ modules_version: 2.17.0
 mongoose_os_version: 2.17.0
 
 config_schema:
-  - ["mqtt.server", "iot.eclipse.org:1883"]
-  - ["i2c.enable", false]
-  - ["wifi.sta.enable", false]
-  - ["wifi.ap.enable", false]
+  - ["mjs.generate_jsc", "b", false, {title: "Generate .jsc file when executing any .js file"}]
+  - ["i2c.enable", true]
 
 tags:
   - js
@@ -35,7 +33,6 @@ libs:
   - origin: https://github.com/mongoose-os-libs/adc
   - origin: https://github.com/mongoose-os-libs/i2c
   - origin: https://github.com/mongoose-os-libs/rpc-loopback
-  - origin: https://github.com/mongoose-os-libs/wifi
   - origin: https://github.com/mongoose-os-libs/mqtt
   - origin: https://github.com/mongoose-os-libs/dht
   - origin: https://github.com/mongoose-os-libs/arduino-adafruit-ssd1306
