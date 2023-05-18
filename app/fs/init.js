@@ -114,7 +114,7 @@ UART.setRxEnabled(uartNo, true);
 Timer.set(5000, Timer.REPEAT, function () {
   let write_avail = UART.writeAvail(uartNo);
   if (write_avail) {
-      let payload = 'sender';
+      let payload = 'i am sender';
       UART.write(uartNo, e32_header + payload);
       showStr(oled, payload);
   }
