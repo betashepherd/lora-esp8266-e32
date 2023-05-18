@@ -68,14 +68,14 @@ let e32_low_addr = 0x02;
 let e32_channel = 0x17;//433 MHz
 let e32_header = chr(e32_high_addr) + chr(e32_low_addr) + chr(e32_channel);
 
-// e32 sender module config
+// e32 module config
 let uartNo = 0;  // debug -> 0 , prod -> 1
 let m0_pin = 5;  //D1 -> GPIO 5
 let m1_pin = 4;  //D2 -> GPIO 4
 //let aux_pin = 0; //D3 -> GPIO 0
 let rxAcc = '';  // Accumulated Rx data, will be echoed back to Tx
 
-// init e32 sender pinout
+// init e32 pinout
 GPIO.set_mode(m0_pin, GPIO.MODE_OUTPUT);
 GPIO.set_mode(m1_pin, GPIO.MODE_OUTPUT);
 //GPIO.set_mode(aux_pin, GPIO.MODE_OUTPUT);
@@ -88,7 +88,7 @@ GPIO.set_mode(m1_pin, GPIO.MODE_OUTPUT);
  * sleep mode m0 = 1 , m1 = 1
  * */
 
-//set sender wake mode
+//set module wake mode
 GPIO.write(m0_pin, GPIO.MODE_OUTPUT);
 GPIO.write(m1_pin, GPIO.MODE_INPUT);
 //GPIO.write(aux_pin, GPIO.MODE_INPUT);
