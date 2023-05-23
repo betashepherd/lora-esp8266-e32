@@ -12,7 +12,7 @@
 
 2. e32 addr set
     
-    use this module to set e32 hard params, yello pin is for work mode change 
+    use this module to set e32 hard params, 2 yellow pins are for work mode change 
 
     ![image](images/debuger.jpg)
 
@@ -38,6 +38,9 @@
 
 3. real
    ![image](images/sender.jpg)
+   
+   
+   left is sender, right is receiver
    
    ![image](images/working.jpg)
 
