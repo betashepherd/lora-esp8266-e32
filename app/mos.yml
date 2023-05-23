@@ -10,9 +10,9 @@ mongoose_os_version: 2.17.0
 config_schema:
   - ["i2c.enable", true]
   # because esp8266 has only 1 uart so use it to send data to lora e32 module
-  - ["debug.level", -1]        #// -1 close msg out to std_out
-  - ["debug.stderr_uart", -1]  #// -1
-  - ["debug.stdout_uart", -1]  #// -1
+  - ["debug.level", -1]        #// -1 close msg out to std_out default: 2
+  - ["debug.stderr_uart", -1]  #// -1 close default: 0
+  - ["debug.stdout_uart", -1]  #// -1 close default: 0
 
 tags:
   - js
