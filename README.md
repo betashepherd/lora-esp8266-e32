@@ -14,7 +14,9 @@
     
     use this module to set e32 hard params, yello pin is for work mode change 
 
-   ![image](images/debuger.jpg)
+    ![image](images/debuger.jpg)
+
+    ![image](images/e32_hard_param.jpg)
 
     sender
 
